@@ -1,2 +1,3 @@
 # Autonomous-Meeting-Intelligence-Platform
-building a virtual meeting assistant to apply what i've learned and what ill learn , wait for it , its coming
+CorpBrain is an AI system that automatically ingests meeting recordings, understands them, builds a "Knowledge Graph" of the company's decisions, and executes tasks based on what was said.
+Coming soon
