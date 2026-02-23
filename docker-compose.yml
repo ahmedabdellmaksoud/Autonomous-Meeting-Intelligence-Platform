@@ -1,0 +1,5 @@
+# CorpBrain Docker Compose
+version: '3.8'
+
+services:
+  # Microservices will be added here
