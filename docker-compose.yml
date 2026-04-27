@@ -2,4 +2,28 @@
 version: '3.8'
 
 services:
-  # Microservices will be added here
+
+  ingestion:
+    build: ./ingestion_service
+    container_name: corpbrain-ingestion
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./ingestion_service/temp_uploads:/app/temp_uploads
+    restart: unless-stopped
+
+  cognitive:
+    build: ./cognitive_service
+    container_name: corpbrain-cognitive
+    ports:
+      - "8001:8001"
+    env_file:
+      - ./cognitive_service/.env
+    volumes:
+      # Mount the ingestion uploads so cognitive can read audio files
+      - ./ingestion_service/temp_uploads:/app/temp_uploads:ro
+      # Persist extracted results outside the container
+      - ./cognitive_service/results:/app/results
+    depends_on:
+      - ingestion
+    restart: unless-stopped

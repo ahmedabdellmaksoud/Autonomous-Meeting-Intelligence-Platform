@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+openai-whisper
+google-generativeai
+python-dotenv
+pydantic
