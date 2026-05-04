@@ -1,36 +1,39 @@
 """
 CorpBrain — Cognitive Service Configuration
 ============================================
-Central settings for the transcription + extraction microservice.
+No external AI API required.
+Transcription: faster-whisper (local)
+Classification: BERT checkpoint (local, from Kaggle training)
+Extraction: rule-based + T5 model checkpoint (local, from Kaggle training)
 """
 
 import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load .env explicitly by path so it works from any working directory
 load_dotenv(dotenv_path=Path(__file__).resolve().parent / ".env")
 
-# ── Paths ─────────────────────────────────────────────────
-BASE_DIR     = Path(__file__).resolve().parent
-RESULTS_DIR  = BASE_DIR / "results"
+# ── Paths ──────────────────────────────────────────────────────────────────
+BASE_DIR    = Path(__file__).resolve().parent
+RESULTS_DIR = BASE_DIR / "results"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-# ── Service identity ──────────────────────────────────────
-# Each service owns its own port:
-#   ingestion  → 8000
-#   cognitive  → 8001
-#   agentic    → 8002
-#   knowledge  → 8003
+ROOT_DIR    = BASE_DIR.parent
+CHECKPOINTS = ROOT_DIR / "models" / "checkpoints"
+
+# ── Service identity ───────────────────────────────────────────────────────
 SERVICE_NAME = "cognitive"
 SERVICE_HOST = os.getenv("COGNITIVE_HOST", "0.0.0.0")
 SERVICE_PORT = int(os.getenv("COGNITIVE_PORT", "8001"))
 
-# ── Whisper ───────────────────────────────────────────────
-# "base" is fast and good enough for MVP.
-# Upgrade to "small" or "medium" later for better Arabic accuracy.
-WHISPER_MODEL = "base"
+# ── Whisper (faster-whisper) ───────────────────────────────────────────────
+WHISPER_MODEL   = os.getenv("WHISPER_MODEL", "base")
+WHISPER_DEVICE  = "cuda" if __import__("torch").cuda.is_available() else "cpu"
+WHISPER_COMPUTE = "float16" if WHISPER_DEVICE == "cuda" else "int8"
 
-# ── Gemini ────────────────────────────────────────────────
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_MODEL   = "gemini-1.5-flash"
+# ── BERT Classifier checkpoint (trained on Kaggle, downloaded here) ────────
+BERT_CHECKPOINT     = CHECKPOINTS / "meeting_classifier"
+CLASSIFIER_THRESHOLD = float(os.getenv("CLASSIFIER_THRESHOLD", "0.5"))
+
+# ── T5 Extractor checkpoint (trained on Kaggle, downloaded here) ──────────
+EXTRACTOR_CHECKPOINT = CHECKPOINTS / "extractor"

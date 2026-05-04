@@ -1,0 +1,46 @@
+name: CorpBrain CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-ingestion:
+    name: Test Ingestion Service
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          cd ingestion_service
+          pip install -r requirements.txt pytest httpx
+      - name: Run tests
+        run: |
+          cd ingestion_service
+          pytest test_ingestion.py -v
+
+  build-images:
+    name: Build Docker Images
+    runs-on: ubuntu-latest
+    needs: test-ingestion
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Create .env files (CI stubs)
+        run: |
+          echo "GEMINI_API_KEY=ci_stub" > cognitive_service/.env
+          echo "GEMINI_API_KEY=ci_stub" > knowledge_service/.env
+          echo "GEMINI_API_KEY=ci_stub"  > agentic_service/.env
+          echo "JIRA_BASE_URL="         >> agentic_service/.env
+          echo "JIRA_EMAIL="            >> agentic_service/.env
+          echo "JIRA_API_TOKEN="        >> agentic_service/.env
+          echo "JIRA_PROJECT_KEY=CORP"  >> agentic_service/.env
+          echo "SLACK_WEBHOOK_URL="     >> agentic_service/.env
+      - name: Build all images
+        run: docker compose build

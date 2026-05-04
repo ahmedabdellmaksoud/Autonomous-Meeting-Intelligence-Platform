@@ -1,0 +1,23 @@
+{
+  "transcript": "Armored will prepare the project's slides by Friday. Sarah will send the budget report to the manager by Monday. The team needs to review the design mock-ups before the next meeting on Wednesday.",
+  "language": "en",
+  "confidence": 0.9993815422058105,
+  "rtf": 0.14178369726453507,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "text": " Armored will prepare the project's slides by Friday."
+    },
+    {
+      "start": 4.0,
+      "end": 8.0,
+      "text": " Sarah will send the budget report to the manager by Monday."
+    },
+    {
+      "start": 8.0,
+      "end": 14.0,
+      "text": " The team needs to review the design mock-ups before the next meeting on Wednesday."
+    }
+  ]
+}

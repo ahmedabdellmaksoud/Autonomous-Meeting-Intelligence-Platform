@@ -1,0 +1,94 @@
+text,label
+Sabah el kheir ya team. Khalas ana mn el-login module embareh. Ennaharda ha-eshtegel ala el-dashboard. Mafish any blockers.,1
+Sprint review with the client. We completed all 8 stories committed this sprint. The client is happy with the new search feature. Requesting a small tweak to the filters.,1
+Today's lecture covers the fundamentals of machine learning. We'll start with supervised learning and the concept of training data.,0
+"This is your captain speaking. We've reached our cruising altitude of 35,000 feet. The weather looks clear ahead.",0
+"Good morning everyone. Let's start our daily standup. Ahmed, what did you finish yesterday? I completed the login module. Today I'll work on the dashboard. No blockers.",1
+"Quarterly review with management. Team velocity increased by 15% this quarter. Main achievements: mobile launch, performance improvements, and API v2.",1
+"Kickoff meeting for the new authentication module. Team, we're replacing our legacy login system with OAuth 2.0. Sara leads, Ahmed does frontend, Omar does backend.",1
+Welcome back to The Mindfulness Hour. Today we're exploring breathing techniques to reduce stress and anxiety.,0
+"Sprint 14 planning session. Let's go through the backlog. The highest priority items are: the mobile redesign — 8 points, the payment gateway — 13 points, and the notification system — 5 points.",1
+Planning meeting. Hatef: 3andena capacity bta3 35 points el sprint dah. Yalla nekhtar el tickets el ahm.,1
+"The recipe calls for two cups of flour, one egg, half a cup of sugar, and a pinch of salt. Mix the dry ingredients first.",0
+"Let's quickly discuss the API design before we start implementation. Should we use REST or GraphQL? Given our client is mobile-first, I'd recommend GraphQL for flexibility.",1
+"Ladies and gentlemen, the captain has turned on the fasten seatbelt sign as we prepare for our descent into Cairo International Airport.",0
+Chapter 5: Photosynthesis. Plants convert sunlight into chemical energy using chlorophyll. The equation is: 6CO2 + 6H2O + light → C6H12O6 + 6O2.,0
+"Backlog refinement session. The user authentication epic has 4 stories: login, register, password reset, and OAuth integration. Let's estimate each one.",1
+Standup time. I completed the CI pipeline fixes yesterday. Today I'll work on deployment scripts. Blocked by access to the production server.,1
+"Feature planning meeting with the product team. We're aligning on the Q3 roadmap. Three main pillars: performance, mobile, and integrations.",1
+Design review. The new UI mockups are clean but the mobile navigation is confusing. Sara will work with the designer to simplify it.,1
+"Hi, this is the clinic calling to remind you about your dental appointment tomorrow at 2pm. Please call us if you need to reschedule.",0
+"Welcome to The Tech Talk podcast. I'm your host Sarah, and today we have a fascinating guest who just launched his third startup.",0
+"Sprint 15 planning. Based on last sprint's velocity of 42 points, we're committing to 40 this sprint. Key items: refactoring the authentication module and adding the export feature.",1
+Good evening. I'm your anchor for tonight's news. Let's begin with the latest updates from the world of sports.,0
+Press 1 for account balance. Press 2 for recent transactions. Press 3 to speak with a representative. Press 9 to return to the main menu.,0
+Sprint 13 retrospective. What went well: we delivered everything we committed to. What to improve: our code review process is too slow. Action item: set a 24-hour review SLA.,1
+"End of sprint retrospective. Three things we're proud of: the mobile launch, zero production bugs, and our new onboarding flow. One thing to fix: deployment takes too long.",1
+Planning meeting for the next two weeks. We need to decide on team capacity. Ahmed is at 80% this sprint. We're committing to 35 story points total.,1
+You're listening to The Daily News. Our top story: the stock market closed at record highs for the third consecutive day.,0
+This is the History Uncovered podcast. Episode 42: The Rise and Fall of the Roman Empire. Let's set the scene.,0
+Retro time. Positives: team communication was great this sprint. Negatives: too many context switches. We need to protect focus time. Action: no meetings before 10am.,1
+Thank you for your order. Your tracking number is 84729347. Your package will arrive between Monday and Wednesday.,0
+Standup. Yesterday I set up the Docker containers for staging. Today I'll configure the monitoring tools. No blockers.,1
+Welcome to Cooking with Maria. Today I'll show you how to make an authentic Italian pasta carbonara from scratch.,0
+Good morning. Yesterday I integrated the Stripe payment gateway. Today I'll test edge cases. My blocker is waiting for test API credentials from the client.,1
+Retro bta3et el sprint. Eh elli mesh mashi kwais? El code review biyakhod waat kteer. Lazem nesawwar solution.,1
+"Hi honey, just calling to let you know I'll be late tonight. Can you please pick up the kids from school?",0
+Capacity planning meeting. Next sprint we have Yara unavailable for 3 days. We'll adjust our commitment from 45 to 35 story points accordingly.,1
+"Hello, is this Mr. Ahmed? I'm calling from your bank. There's been some unusual activity on your account and we need to verify some information.",0
+"Retro meeting. The team felt the sprint was too packed. We overcommitted by 20%. Next sprint we'll be more conservative. Also, we need better async communication.",1
+Morning standup. Yesterday we demo'd the sprint to the client. Today we're starting sprint 15 work. No blockers but we need to prioritize tickets.,1
+This is a reminder that your car insurance policy expires in 30 days. Please contact us to renew and avoid a lapse in coverage.,0
+Security review session. We identified 3 high-severity vulnerabilities in the dependencies. Khaled will patch them by Friday.,1
+"Sprint planning complete. We've committed to: 2 new features, 3 bug fixes, and 1 infrastructure improvement. Let's get started.",1
+This is an automated message from your internet provider. Your service will be temporarily unavailable for maintenance on Sunday from 2am to 4am.,0
+Architecture review. The proposed microservices split looks good but we need to address the data consistency issue. Omar will add a saga pattern for distributed transactions.,1
+Hi this is John from customer support. How can I help you today? I'm having trouble logging into my account.,0
+"Sprint planning. We've identified 6 must-have features for the client demo on March 15th. Ahmed will own the frontend, Sara will own the backend APIs.",1
+Post-mortem for the production incident. The API went down for 2 hours on Tuesday. Root cause: the database connection pool was exhausted. Action items for prevention.,1
+Daily standup. Khaled: finished the database migration yesterday. Today optimizing slow queries. No blockers. Yara: finished UI components. Today writing unit tests. No blockers.,1
+"Story estimation meeting. The data migration task — how many points? It involves schema changes, data validation, and rollback scripts. I'd say 8. Any objections?",1
+Technical discussion: how should we handle the race condition in the booking system? I suggest using optimistic locking at the database level. Any alternatives?,1
+Quick daily. I finished the bug fixes from QA yesterday. Starting the new reporting feature today. Slight blocker: waiting for the updated mockups.,1
+Welcome to the science museum's audio tour. You are now entering the Space Exploration wing. The first exhibit is a replica of the Apollo 11 command module.,0
+"Daily scrum. Team, let's go around. Ahmed: dashboard complete, starting mobile view today. Sara: API done, writing tests now. Omar: still blocked on design approval.",1
+Welcome to the yoga class. Let's start with a few deep breaths. Inhale slowly through the nose... and exhale through the mouth.,0
+"Emergency meeting about the production outage. The payment service is down. We need to roll back the last deployment immediately. Khaled, can you do that now?",1
+The game was incredible last night. The team came back from 3 goals down to win in extra time. I was on the edge of my seat.,0
+In this class we'll examine the causes of World War 1. The primary trigger was the assassination of Archduke Franz Ferdinand in Sarajevo.,0
+"In this tutorial I'll show you how to use Git for version control. First, let's initialize a repository with git init.",0
+Hello? I can barely hear you. Can you call me back? I'm in a tunnel right now.,0
+Daily standup. Omar: khalas mn el-API documentation embareh. Ennaharda ha-eshtegel ala el-testing. Blocked 3shan el server access.,1
+Good morning. I'm calling to follow up on the complaint you submitted last week regarding your internet service.,0
+Your call is important to us. Please hold and the next available agent will be with you shortly. Estimated wait time: 7 minutes.,0
+Good afternoon. I'm calling on behalf of the government agency to inform you about your tax return status for the year 2024.,0
+This is your biology lab instructor. Today we'll be dissecting a frog to study its internal organ systems.,0
+"Today in history class we'll discuss the French Revolution, its causes, key events, and its lasting impact on modern democracy.",0
+"Today's documentary explores the deep ocean. At 3,000 meters below the surface, sunlight cannot penetrate and life exists in total darkness.",0
+I just finished reading that book you recommended. The ending was unexpected but I think it made sense given the foreshadowing in chapter 3.,0
+"Team, lazem net-kalam 3an el sprint planning. El priority el awlaneya hia el mobile redesign, ba3den el payment gateway.",1
+Welcome to Introduction to Economics. Today's topic: supply and demand curves and how markets reach equilibrium.,0
+"Hello? Yes, I'd like to order a large pizza with extra cheese and mushrooms please. For delivery to the same address.",0
+"Thank you for calling the embassy. Our office hours are Sunday to Thursday, 8am to 3pm. For emergencies press 0.",0
+"Let's continue from where we left off. Last session we covered neural networks. Today we move to convolutional neural networks, or CNNs.",0
+Retrospective for the quarter. What worked: clear sprint goals. What didn't work: unclear ownership of cross-team tasks. Solution: assign a DRI for every epic.,1
+Chapter 12: It was a cold and dark night when the detective arrived at the mansion. The butler stood nervously at the door.,0
+"This is lecture 7 on data structures. Today we cover binary search trees: insertion, deletion, and traversal algorithms.",0
+Introduction to algorithms. Today we'll prove the time complexity of merge sort. The recurrence relation is T(n) = 2T(n/2) + O(n).,0
+"Your appointment has been confirmed for Monday, March 18th at 10:30am with Dr. Hassan. Please arrive 10 minutes early.",0
+Quick sync about the client requirements. They want the export feature to support CSV and Excel. Let's assign this to Ahmed with a Thursday deadline.,1
+Performance review meeting. The API response time dropped from 800ms to 200ms after the optimizations. Excellent work by the backend team.,1
+Quick standup. Sara here. Yesterday I fixed the authentication bug. Today I'm working on the payment integration. My blocker is the missing design specs.,1
+"Hello, I'm looking for Mr. Hassan. Is this the right number? Oh, wrong number. Sorry about that.",0
+Code review discussion. Sara's PR for the payment module needs some changes. The error handling is missing for edge cases. Let's go through the comments.,1
+Morning team. Omar speaking. Yesterday I reviewed 3 pull requests. Today I'll work on the API documentation. I'm blocked by the unclear requirements for the search feature.,1
+Review meeting. We need to look at why we only delivered 30 of 45 committed points. Two stories were blocked by external dependencies we didn't account for.,1
+Have you seen the weather forecast? They're predicting heavy rain all week. I guess our barbecue plans are cancelled.,0
+"Hi everyone, welcome back to my YouTube channel. Today I'm going to show you how to build a mechanical keyboard from scratch.",0
+I can't believe how expensive everything has become. My grocery bill is 40% higher than last year.,0
+"Hi, this is an automated survey call. On a scale of 1 to 5, how satisfied were you with your recent purchase?",0
+"Sprint review time. Let's demo what we completed this sprint. Ahmed, can you walk us through the new dashboard? Sure. Here you can see the real-time metrics panel.",1
+"Good morning students. Before we start today's physics lesson, let's quickly review Newton's three laws of motion.",0
+"You're tuned in to Radio Misr. After the break, we'll have the traffic report and weather forecast for Cairo.",0
+Planning for Q2. We need to decide between building the analytics dashboard in-house versus using a third-party tool. Decision: build in-house. Omar leads the effort.,1
+"Hey, it's me. Did you see the game last night? Incredible finish. Anyway, are you free this weekend?",0

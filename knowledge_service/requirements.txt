@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+chromadb
+sentence-transformers
+python-dotenv
+pydantic
+accelerate>=1.1.0

@@ -1,10 +1,40 @@
-__pycache__/
-*.py[cod]
-*$py.class
+# Secrets
 .env
-.venv
-env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
 venv/
-*.log
-.DS_Store
+.venv/
+env/
+
+# Service data (gitignored — mount via Docker volumes)
 temp_uploads/
+results/
+chroma_db/
+
+# Trained model weights (large binary files)
+models/checkpoints/
+notebooks/bert_checkpoints/
+notebooks/meeting_classifier_checkpoint/
+*.pt
+*.safetensors
+
+# Jupyter outputs
+*_OUT.ipynb
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

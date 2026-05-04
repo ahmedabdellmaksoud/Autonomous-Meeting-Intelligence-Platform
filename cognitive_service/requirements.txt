@@ -1,6 +1,7 @@
 fastapi
 uvicorn[standard]
-openai-whisper
-google-generativeai
+faster-whisper
+transformers
+torch
 python-dotenv
-pydantic
+pydanticaccelerate>=1.1.0

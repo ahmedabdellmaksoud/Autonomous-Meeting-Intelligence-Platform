@@ -1,8 +1,8 @@
 """
 CorpBrain — Cognitive Service Utils
 =====================================
-Saves and loads task JSON results from disk.
-Every other service finds the result using the meeting_id.
+Saves and loads cognitive result JSON from disk.
+Filename convention: {meeting_id}_cognitive.json
 """
 
 import json
@@ -12,11 +12,7 @@ from config import RESULTS_DIR
 
 
 def save_result(meeting_id: str, data: dict) -> Path:
-    """
-    Save *data* as results/{meeting_id}_tasks.json.
-    Returns the full path of the saved file.
-    """
-    dest = RESULTS_DIR / f"{meeting_id}_tasks.json"
+    dest = RESULTS_DIR / f"{meeting_id}_cognitive.json"
     with open(dest, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     print(f"[utils] Saved → {dest}")
@@ -24,11 +20,7 @@ def save_result(meeting_id: str, data: dict) -> Path:
 
 
 def load_result(meeting_id: str) -> dict | None:
-    """
-    Load and return the task JSON for *meeting_id*.
-    Returns None if the file does not exist yet.
-    """
-    dest = RESULTS_DIR / f"{meeting_id}_tasks.json"
+    dest = RESULTS_DIR / f"{meeting_id}_cognitive.json"
     if not dest.exists():
         return None
     with open(dest, "r", encoding="utf-8") as f:

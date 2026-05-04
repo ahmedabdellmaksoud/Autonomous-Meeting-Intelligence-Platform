@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+langgraph
+requests
+python-dotenv
+pydantic
+accelerate>=1.1.0
